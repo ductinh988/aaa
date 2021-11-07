@@ -1,13 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>ôi bạn ơi</title>
+    <link rel="stylesheet" href="Index.css">
+    <style>
+        html {
+            font-size: 30px;
+        }
+        
+        .box {
+            width: calc(80% + 20px);
+            height: 300px;
+            background-color: rgb(20, 150, 100);
+        }
+        
+        .box::after {
+            content: attr(mau);
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+            padding: 50px;
+        }
+        
+        a::after {
+            content: "("attr(href)")";
+        }
+        
+        h2 {
+            font-size: 1rem;
+        }
+        
+        h1:active {
+            color: rgb(86, 161, 11);
+        }
+        
+        li:first-child {
+            color: darkblue;
+        }
+        
+        li:last-child {
+            color: darkorchid;
+        }
+        
+        .box::before {
+            content: "màu đen";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            padding-left: 50px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+        }
+        
+        h1::first-letter {
+            font-size: 150px;
+            color: chartreuse;
+        }
+        
+        h1::first-line {
+            font-size: 200px;
+        }
+        
+        h1::selection {
+            color: tomato;
+        }
+        
+        .test {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            /* float:left; */
+        }
+        
+        .test1 {
+            background-color: tomato;
+            padding: 50px;
+            border-left-width: 10px;
+            border-top-width: 20px;
+            border-bottom-width: 15px;
+            border-right-width: 10px;
+            border-style: dashed;
+            border-color: black;
+        }
+        
+        .test2 {
+            background-color: turquoise;
+            padding: 50px 40px 60px 70px;
+            border-width: 10px;
+            border-style: dashed;
+            border-color: black;
+            margin: 10px;
+        }
+        
+        .test3 {
+            background-color: yellowgreen;
+            padding-left: 50px;
+            border: 10px solid black;
+            margin-top: 10px;
+        }
+        
+        .ok {
+            background-color: crimson;
+            width: 200px;
+            height: 200px;
+            padding: 25px;
+            /* color: white; */
+            border: 10px dashed black;
+            box-sizing: border-box;
+            background-clip: content-box;
+        }
+        
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://wall.vn/wp-content/uploads/2020/03/hinh-nen-dep-may-tinh-1.jpg);
+            background-size: 500px;
+            background-repeat: no-repeat;
+            /* background */
+            /* border: 20px dashed black;
+            padding: 20px;
+            box-sizing: border-box;
+            background-origin:content-box; */
+            background-position: center;
+            /* background-size: cover; */
+            /* background-image: linear-gradient(0, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)),
+            url(https://wall.vn/wp-content/uploads/2020/03/hinh-nen-dep-may-tinh-1.jpg); */
+        }
+        /* h1:hover {
+            color: chocolate;
+        } */
+        
+        h2 {
+            position: relative;
+            top: 100px;
+        }
+        
+        .alo {
+            width: 100%;
+            height: 120px;
+            background-color: black;
+            position: relative;
+        }
+        
+        .alo-child {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+        }
+        .moi {
+            width: 100%;
+            height: 30px;
+            background-color: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Ahiih</h1>
-    <h2>Hihih</h2>
+    <div class="test test1">test 1</div>
+    <div class="tets test2">test 2</div>
+    <div class="test test3">test 3</div>
+    <div class="ok">ok không </div>
+    <div class="header"></div>
+    <div class="alo">
+        <div class="alo-child"></div>
+    </div>
+    <div class="moi"></div>
+    <div>
+        <a href="https://fullstack.edu.vn/">học lập trình(https://fullstack.edu.vn/) </a>
+        <div class="box" mau="đây là màu hồng"></div>
+        <h1>Ahiih<br/>ôi bạn ơi</h1>
+        <h2 style="font-size: 20px;">Hihih</h2>
+        <ul>
+            <li>anh ơi</li>
+            <li>em ơi</li>
+            <li>bạn ơi</li>
+        </ul>
+    </div>
 </body>
+
 </html>
